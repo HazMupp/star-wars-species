@@ -3,7 +3,7 @@
 // Klicka på spotify-knappen
 $('#human-button').click(function() {
 
-  var humanrUrl = "http://swapi.co/api/species/1/";
+  var humanUrl = "http://swapi.co/api/species/1/";
   $.get(humanUrl, function(data, textStatus, jqXHR){
     
     var responseBody = data;
