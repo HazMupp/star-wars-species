@@ -7,7 +7,7 @@ $('#human-button').click(function() {
   $.get(humanUrl, function(data, textStatus, jqXHR){
     
     var responseBody = data;
-    $('#information-field').text(responseBody.name + ". " + responseBody.classification + ". " + responseBody.designation ".");
+    $('#information-field').text(responseBody.name + ". " + responseBody.classification + ". " + responseBody.designation + ".");
     
   })
   
