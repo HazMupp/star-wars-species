@@ -15,8 +15,14 @@ $('#human-button').click(function() {
     
     var homeworldUrl = responseBody.homeworld;
     
+    $.get(homeworldUrl, function(data2, textStatus2, jqXHR2) {
+      
+      var planetName = data2;
+       $('#information-field3').text("Homeworld: " +  planetName.name );
+      
+    });
     
-    $('#information-field3').text("Homeworld: " + $.get(homeworldUrl, function(data2, textStatus2, jqXHR2) {responseBody.name}) );
+ //   $('#information-field3').text("Homeworld: " +  );
     
   })
   
