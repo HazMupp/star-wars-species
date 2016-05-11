@@ -7,7 +7,8 @@ $('#human-button').click(function() {
   $.get(humanUrl, function(data, textStatus, jqXHR){
     
     var responseBody = data;
-    $('#information-field').text(responseBody.name + ". " + responseBody.classification + ". " + responseBody.designation + ".");
+    $('#information-field').text("Name: " + responseBody.name + ". " + "Classification: " + responseBody.classification +
+    ". " + "Designation: " + responseBody.designation + ".");
     
   })
   
@@ -20,7 +21,8 @@ $('#droid-button').click(function() {
   $.get(droidUrl, function(data, textStatus, jqXHR){
   
         var responseBody = data;
-        $('#information-field').text(responseBody.name + ". " + responseBody.classification + ". " + responseBody.designation + ".");
+        $('#information-field').text("Name: " + responseBody.name + ". " + "Classification: " + responseBody.classification +
+    ". " + "Designation: " + responseBody.designation + ".");
     
   })
   
