@@ -11,7 +11,11 @@ $('#human-button').click(function() {
     ". " + "Designation: " + responseBody.designation + ". " + "Average height: " + responseBody.average_height + ".");
     
     $('#information-field2').text("Skin colors: " + responseBody.skin_colors + ". " + "Hair colors: " + responseBody.hair_colors + 
-    ". " + "Eye colors: " + responseBody.eye_colors + ". " + "Average lifespan: " + responseBody.average_lifespan + ".")
+    ". " + "Eye colors: " + responseBody.eye_colors + ". " + "Average lifespan: " + responseBody.average_lifespan + ".");
+    
+    var homeworldUrl = "homeworld";
+    
+    $('#information-field3').text("Homeworld: " + responeBody.homeworld + ". " );
     
   })
   
@@ -28,7 +32,7 @@ $('#droid-button').click(function() {
     ". " + "Designation: " + responseBody.designation + ". " + "Average height: " + responseBody.average_height + ".");
     
         $('#information-field2').text("Skin colors: " + responseBody.skin_colors + ". " + "Hair colors: " + responseBody.hair_colors + 
-    ". " + "Eye colors: " + responseBody.eye_colors + ". " + "Average lifespan: " + responseBody.average_lifespan + ".")
+    ". " + "Eye colors: " + responseBody.eye_colors + ". " + "Average lifespan: " + responseBody.average_lifespan + ".");
     
   })
   
@@ -45,7 +49,7 @@ $('#wookie-button').click(function() {
     ". " + "Designation: " + responseBody.designation + ". " + "Average height: " + responseBody.average_height + ".");
     
         $('#information-field2').text("Skin colors: " + responseBody.skin_colors + ". " + "Hair colors: " + responseBody.hair_colors + 
-    ". " + "Eye colors: " + responseBody.eye_colors + ". " + "Average lifespan: " + responseBody.average_lifespan + ".")
+    ". " + "Eye colors: " + responseBody.eye_colors + ". " + "Average lifespan: " + responseBody.average_lifespan + ".");
     
   })
   
@@ -62,7 +66,7 @@ $('#rodian-button').click(function() {
     ". " + "Designation: " + responseBody.designation + ". " + "Average height: " + responseBody.average_height + ".");
     
         $('#information-field2').text("Skin colors: " + responseBody.skin_colors + ". " + "Hair colors: " + responseBody.hair_colors + 
-    ". " + "Eye colors: " + responseBody.eye_colors + ". " + "Average lifespan: " + responseBody.average_lifespan + ".")
+    ". " + "Eye colors: " + responseBody.eye_colors + ". " + "Average lifespan: " + responseBody.average_lifespan + ".");
     
   })
   
@@ -79,7 +83,7 @@ $('#hutt-button').click(function() {
     ". " + "Designation: " + responseBody.designation + ". " + "Average height: " + responseBody.average_height + ".");
     
         $('#information-field2').text("Skin colors: " + responseBody.skin_colors + ". " + "Hair colors: " + responseBody.hair_colors + 
-    ". " + "Eye colors: " + responseBody.eye_colors + ". " + "Average lifespan: " + responseBody.average_lifespan + ".")
+    ". " + "Eye colors: " + responseBody.eye_colors + ". " + "Average lifespan: " + responseBody.average_lifespan + ".");
     
   })
   
@@ -96,7 +100,7 @@ $('#yoda-button').click(function() {
     ". " + "Designation: " + responseBody.designation + ". " + "Average height: " + responseBody.average_height + ".");
     
         $('#information-field2').text("Skin colors: " + responseBody.skin_colors + ". " + "Hair colors: " + responseBody.hair_colors + 
-    ". " + "Eye colors: " + responseBody.eye_colors + ". " + "Average lifespan: " + responseBody.average_lifespan + ".")
+    ". " + "Eye colors: " + responseBody.eye_colors + ". " + "Average lifespan: " + responseBody.average_lifespan + ".");
     
   })
   
