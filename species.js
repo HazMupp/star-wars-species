@@ -44,7 +44,7 @@ $('#wookie-button').click(function() {
 
 $('#rodian-button').click(function() {
 
-  var rodianUrl = "http://swapi.co/api/species/3/";
+  var rodianUrl = "http://swapi.co/api/species/4/";
   
   $.get(rodianUrl, function(data, textStatus, jqXHR){
   
