@@ -13,9 +13,10 @@ $('#human-button').click(function() {
     $('#information-field2').text("Skin colors: " + responseBody.skin_colors + ". " + "Hair colors: " + responseBody.hair_colors + 
     ". " + "Eye colors: " + responseBody.eye_colors + ". " + "Average lifespan: " + responseBody.average_lifespan + ".");
     
-    var homeworldUrl = "homeworld";
+    var homeworldUrl = responseBody.homeworld;
     
-    $('#information-field3').text("Homeworld: " + responseBody.homeworld + ". " );
+    
+    $('#information-field3').text("Homeworld: " + $.get(homeworldUrl, function(data2, textStatus2, jqXHR2) {name}) );
     
   })
   
