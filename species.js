@@ -16,7 +16,7 @@ $('#human-button').click(function() {
     var homeworldUrl = responseBody.homeworld;
     
     
-    $('#information-field3').text("Homeworld: " + $.get(homeworldUrl, function(data2, textStatus2, jqXHR2) {name}) );
+    $('#information-field3').text("Homeworld: " + $.get(homeworldUrl, function(data2, textStatus2, jqXHR2) {responseBody.name}) );
     
   })
   
