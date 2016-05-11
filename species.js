@@ -15,7 +15,7 @@ $('#human-button').click(function() {
     
     var homeworldUrl = "homeworld";
     
-    $('#information-field3').text("Homeworld: " + responeBody.homeworld + ". " );
+    $('#information-field3').text("Homeworld: " + responseBody.homeworld + ". " );
     
   })
   
