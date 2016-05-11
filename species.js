@@ -15,10 +15,9 @@ $('#human-button').click(function() {
 
 $('#droid-button').click(function() {
 
-
   var droidUrl = "http://swapi.co/api/species/2/";
   
-  $.get(chewbaccaUrl, function(data, textStatus, jqXHR){
+  $.get(droidUrl, function(data, textStatus, jqXHR){
   
         var responseBody = data;
         $('#information-field').text(responseBody.name + ". " + responseBody.classification + ". " + responseBody.designation + ".");
