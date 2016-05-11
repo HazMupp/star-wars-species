@@ -27,3 +27,31 @@ $('#droid-button').click(function() {
   })
   
 });
+
+$('#wookie-button').click(function() {
+
+  var wookieUrl = "http://swapi.co/api/species/3/";
+  
+  $.get(wookieUrl, function(data, textStatus, jqXHR){
+  
+        var responseBody = data;
+        $('#information-field').text("Name: " + responseBody.name + ". " + "Classification: " + responseBody.classification +
+    ". " + "Designation: " + responseBody.designation + ".");
+    
+  })
+  
+});
+
+$('#rodian-button').click(function() {
+
+  var rodianUrl = "http://swapi.co/api/species/3/";
+  
+  $.get(rodianUrl, function(data, textStatus, jqXHR){
+  
+        var responseBody = data;
+        $('#information-field').text("Name: " + responseBody.name + ". " + "Classification: " + responseBody.classification +
+    ". " + "Designation: " + responseBody.designation + ".");
+    
+  })
+  
+});
