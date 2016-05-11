@@ -8,7 +8,10 @@ $('#human-button').click(function() {
     
     var responseBody = data;
     $('#information-field').text("Name: " + responseBody.name + ". " + "Classification: " + responseBody.classification +
-    ". " + "Designation: " + responseBody.designation + ".");
+    ". " + "Designation: " + responseBody.designation + ". " + "Average height: " responseBody.average_height + ".");
+    
+    $('information-field2').text("Skin colors: " + responseBody.skin_colors + ". " + "Hair colors: " + responseBody.hair_colors + 
+    ". " + "Eye colors: " + responseBody.eye_colors + ". " + "Average lifespan: " + responseBody.average_lifespan + ".")
     
   })
   
@@ -22,7 +25,10 @@ $('#droid-button').click(function() {
   
         var responseBody = data;
         $('#information-field').text("Name: " + responseBody.name + ". " + "Classification: " + responseBody.classification +
-    ". " + "Designation: " + responseBody.designation + ".");
+    ". " + "Designation: " + responseBody.designation + ". " + "Average height: " responseBody.average_height + ".");
+    
+        $('information-field2').text("Skin colors: " + responseBody.skin_colors + ". " + "Hair colors: " + responseBody.hair_colors + 
+    ". " + "Eye colors: " + responseBody.eye_colors + ". " + "Average lifespan: " + responseBody.average_lifespan + ".")
     
   })
   
@@ -36,7 +42,10 @@ $('#wookie-button').click(function() {
   
         var responseBody = data;
         $('#information-field').text("Name: " + responseBody.name + ". " + "Classification: " + responseBody.classification +
-    ". " + "Designation: " + responseBody.designation + ".");
+    ". " + "Designation: " + responseBody.designation + ". " + "Average height: " responseBody.average_height + ".");
+    
+        $('information-field2').text("Skin colors: " + responseBody.skin_colors + ". " + "Hair colors: " + responseBody.hair_colors + 
+    ". " + "Eye colors: " + responseBody.eye_colors + ". " + "Average lifespan: " + responseBody.average_lifespan + ".")
     
   })
   
@@ -50,7 +59,44 @@ $('#rodian-button').click(function() {
   
         var responseBody = data;
         $('#information-field').text("Name: " + responseBody.name + ". " + "Classification: " + responseBody.classification +
-    ". " + "Designation: " + responseBody.designation + ".");
+    ". " + "Designation: " + responseBody.designation + ". " + "Average height: " responseBody.average_height + ".");
+    
+        $('information-field2').text("Skin colors: " + responseBody.skin_colors + ". " + "Hair colors: " + responseBody.hair_colors + 
+    ". " + "Eye colors: " + responseBody.eye_colors + ". " + "Average lifespan: " + responseBody.average_lifespan + ".")
+    
+  })
+  
+});
+
+$('#hutt-button').click(function() {
+
+  var huttUrl = "http://swapi.co/api/species/5/";
+  
+  $.get(huttUrl, function(data, textStatus, jqXHR){
+  
+        var responseBody = data;
+        $('#information-field').text("Name: " + responseBody.name + ". " + "Classification: " + responseBody.classification +
+    ". " + "Designation: " + responseBody.designation + ". " + "Average height: " responseBody.average_height + ".");
+    
+        $('information-field2').text("Skin colors: " + responseBody.skin_colors + ". " + "Hair colors: " + responseBody.hair_colors + 
+    ". " + "Eye colors: " + responseBody.eye_colors + ". " + "Average lifespan: " + responseBody.average_lifespan + ".")
+    
+  })
+  
+});
+
+$('#yoda-button').click(function() {
+
+  var yodaUrl = "http://swapi.co/api/species/6/";
+  
+  $.get(yodaUrl, function(data, textStatus, jqXHR){
+  
+        var responseBody = data;
+        $('#information-field').text("Name: " + responseBody.name + ". " + "Classification: " + responseBody.classification +
+    ". " + "Designation: " + responseBody.designation + ". " + "Average height: " responseBody.average_height + ".");
+    
+        $('information-field2').text("Skin colors: " + responseBody.skin_colors + ". " + "Hair colors: " + responseBody.hair_colors + 
+    ". " + "Eye colors: " + responseBody.eye_colors + ". " + "Average lifespan: " + responseBody.average_lifespan + ".")
     
   })
   
