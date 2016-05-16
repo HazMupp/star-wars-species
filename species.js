@@ -41,6 +41,16 @@ $('#droid-button').click(function() {
         $('#information-field2').text("Skin colors: " + responseBody.skin_colors + ". " + "Hair colors: " + responseBody.hair_colors + 
     ". " + "Eye colors: " + responseBody.eye_colors + ". " + "Average lifespan: " + responseBody.average_lifespan + ".");
     
+    var homeworldUrl = responseBody.homeworld;
+    
+    $.get(homeworldUrl, function(data2, textStatus2, jqXHR2) {
+      
+      var planetName = data2;
+       $('#information-field3').text("Homeworld: " +  planetName.name );
+      
+    });
+    
+    
   })
   
 });
@@ -57,6 +67,15 @@ $('#wookie-button').click(function() {
     
         $('#information-field2').text("Skin colors: " + responseBody.skin_colors + ". " + "Hair colors: " + responseBody.hair_colors + 
     ". " + "Eye colors: " + responseBody.eye_colors + ". " + "Average lifespan: " + responseBody.average_lifespan + ".");
+    
+    var homeworldUrl = responseBody.homeworld;
+    
+    $.get(homeworldUrl, function(data2, textStatus2, jqXHR2) {
+      
+      var planetName = data2;
+       $('#information-field3').text("Homeworld: " +  planetName.name );
+      
+    });
     
   })
   
@@ -75,6 +94,15 @@ $('#rodian-button').click(function() {
         $('#information-field2').text("Skin colors: " + responseBody.skin_colors + ". " + "Hair colors: " + responseBody.hair_colors + 
     ". " + "Eye colors: " + responseBody.eye_colors + ". " + "Average lifespan: " + responseBody.average_lifespan + ".");
     
+    var homeworldUrl = responseBody.homeworld;
+    
+    $.get(homeworldUrl, function(data2, textStatus2, jqXHR2) {
+      
+      var planetName = data2;
+       $('#information-field3').text("Homeworld: " +  planetName.name );
+      
+    });
+    
   })
   
 });
@@ -92,6 +120,15 @@ $('#hutt-button').click(function() {
         $('#information-field2').text("Skin colors: " + responseBody.skin_colors + ". " + "Hair colors: " + responseBody.hair_colors + 
     ". " + "Eye colors: " + responseBody.eye_colors + ". " + "Average lifespan: " + responseBody.average_lifespan + ".");
     
+    var homeworldUrl = responseBody.homeworld;
+    
+    $.get(homeworldUrl, function(data2, textStatus2, jqXHR2) {
+      
+      var planetName = data2;
+       $('#information-field3').text("Homeworld: " +  planetName.name );
+      
+    });
+    
   })
   
 });
@@ -108,6 +145,15 @@ $('#yoda-button').click(function() {
     
         $('#information-field2').text("Skin colors: " + responseBody.skin_colors + ". " + "Hair colors: " + responseBody.hair_colors + 
     ". " + "Eye colors: " + responseBody.eye_colors + ". " + "Average lifespan: " + responseBody.average_lifespan + ".");
+    
+    var homeworldUrl = responseBody.homeworld;
+    
+    $.get(homeworldUrl, function(data2, textStatus2, jqXHR2) {
+      
+      var planetName = data2;
+       $('#information-field3').text("Homeworld: " +  planetName.name );
+      
+    });
     
   })
   
