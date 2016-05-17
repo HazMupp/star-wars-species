@@ -160,9 +160,9 @@ $('#yoda-button').click(function() {
 
 $('#tatooine-button').click(function() {
 
-  var yodaUrl = "http://swapi.co/api/planets/1/";
+  var tatooineUrl = "http://swapi.co/api/planets/1/";
   
-  $.get(yodaUrl, function(data, textStatus, jqXHR){
+  $.get(tatooineUrl, function(data, textStatus, jqXHR){
   
         var responseBody = data;
         $('#information-field').text("Name: " + responseBody.name + ". " + "Rotation period: " + responseBody.rotation_period +
