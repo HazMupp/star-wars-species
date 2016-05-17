@@ -178,7 +178,7 @@ $('#tatooine-button').click(function() {
       var residentNames = data2;
        $('#information-field3').text("Residents: " +  residentnames.name + ", " +  residentnames.name + ", " +  residentnames.name +
        ", " + residentnames.name + ", " +  residentnames.name + ", " +  residentnames.name + ", " +  residentnames.name + ", " +
-           residentnames.name + ", " +  residentnames.name + ", " +  residentnames.name + ", " +);
+           residentnames.name + ", " +  residentnames.name + ", " +  residentnames.name + ".");
       
     });
     
