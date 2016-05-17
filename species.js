@@ -171,13 +171,25 @@ $('#tatooine-button').click(function() {
         $('#information-field2').text("Climate: " + responseBody.climate + ". " + "Gravity: " + responseBody.gravity + 
     ". " + "Terrain: " + responseBody.terrain + ". " + "Surface water: " + responseBody.surface_water + ".");
     
-    var residentsUrl = responseBody.residents[0];
-
+    
+    var residentsUrl = responseBody.residents[0];  // obeservera att denna variabel kommer byta
+                                                   // ...värde efter att den använts/ texten "appendats"
+                                                   // ... i "#information-field"
+    
     
     $.get(residentsUrl, function(data2, textStatus2, jqXHR2) {
       
       var residentNames = data2;
-       $('#information-field3').text("Residents: " +  residentNames.name);
+       $('#information-field3').text("Famous residents: " +  residentNames.name);
+      
+    });
+  
+    
+    var residentsUrl = responseBody.residents[1];
+     $.get(residentsUrl, function(data2, textStatus2, jqXHR2) {
+      
+      var residentNames = data2;
+     $( '#information-field3' ).append(", " +  residentNames.name);
       
     });
     
