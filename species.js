@@ -171,7 +171,7 @@ $('#tatooine-button').click(function() {
         $('#information-field2').text("Climate: " + responseBody.climate + ". " + "Gravity: " + responseBody.gravity + 
     ". " + "Terrain: " + responseBody.terrain + ". " + "Surface water: " + responseBody.surface_water + ".");
     
-    var residentsUrl = responseBody.residents;
+    var residentsUrl = responseBody.residents[1];
     
     $.get(residentsUrl, function(data2, textStatus2, jqXHR2) {
       
