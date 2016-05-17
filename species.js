@@ -173,7 +173,7 @@ $('#tatooine-button').click(function() {
     
     var residentsUrl = responseBody.residents;
     
-    $.get(homeworldUrl, function(data2, textStatus2, jqXHR2) {
+    $.get(residentsUrl, function(data2, textStatus2, jqXHR2) {
       
       var residentNames = data2;
        $('#information-field3').text("Residents: " +  residentnames.name);
