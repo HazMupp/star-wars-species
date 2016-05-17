@@ -1,6 +1,6 @@
 
 
-// Klicka på spotify-knappen
+
 $('#human-button').click(function() {
 
   var humanUrl = "http://swapi.co/api/species/1/";
@@ -21,9 +21,7 @@ $('#human-button').click(function() {
        $('#information-field3').text("Homeworld: " +  planetName.name );
       
     });
-    
- //   $('#information-field3').text("Homeworld: " +  );
-    
+ //   $('#information-field3').text("Homeworld: " +  )
   })
   
 });
@@ -158,3 +156,33 @@ $('#yoda-button').click(function() {
   })
   
 });
+
+
+$('#tatooine-button').click(function() {
+
+  var yodaUrl = "http://swapi.co/api/planets/1/";
+  
+  $.get(yodaUrl, function(data, textStatus, jqXHR){
+  
+        var responseBody = data;
+        $('#information-field').text("Name: " + responseBody.name + ". " + "Rotation period: " + responseBody.rotation_period +
+    ". " + "Orbital period: " + responseBody.orbital_period + ". " + "Diameter: " + responseBody.diameter + ".");
+    
+        $('#information-field2').text("Climate: " + responseBody.climate + ". " + "Gravity: " + responseBody.gravity + 
+    ". " + "Terrain: " + responseBody.terrain + ". " + "Surface water: " + responseBody.surface_water + ".");
+    
+    var residentsUrl = responseBody.residents;
+    
+    $.get(homeworldUrl, function(data2, textStatus2, jqXHR2) {
+      
+      var residentNames = data2;
+       $('#information-field3').text("Residents: " +  residentnames.name + ", " +  residentnames.name + ", " +  residentnames.name +
+       ", " + residentnames.name + ", " +  residentnames.name + ", " +  residentnames.name + ", " +  residentnames.name + ", " +
+           residentnames.name + ", " +  residentnames.name + ", " +  residentnames.name + ", " +);
+      
+    });
+    
+  })
+  
+});
+
