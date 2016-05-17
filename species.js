@@ -176,9 +176,7 @@ $('#tatooine-button').click(function() {
     $.get(homeworldUrl, function(data2, textStatus2, jqXHR2) {
       
       var residentNames = data2;
-       $('#information-field3').text("Residents: " +  residentnames.name + ", " +  residentnames.name + ", " +  residentnames.name +
-       ", " + residentnames.name + ", " +  residentnames.name + ", " +  residentnames.name + ", " +  residentnames.name + ", " +
-           residentnames.name + ", " +  residentnames.name + ", " +  residentnames.name + ".");
+       $('#information-field3').text("Residents: " +  residentnames.name);
       
     });
     
