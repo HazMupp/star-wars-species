@@ -171,9 +171,11 @@ $('#tatooine-button').click(function() {
         $('#information-field2').text("Climate: " + responseBody.climate + ". " + "Gravity: " + responseBody.gravity + 
     ". " + "Terrain: " + responseBody.terrain + ". " + "Surface water: " + responseBody.surface_water + ".");
     
-    var residentsUrl = responseBody.residents[0]+[1]+[2]+[3]+[4]+[5]+[6]+[7]+[8]+[9];
+    var residentsUrl1 = responseBody.residents[0];
+    var residentsUrl2 = responseBody.residents[1];
+    var residentsUrl3 = responseBody.residents[2];
     
-    $.get(residentsUrl, function(data2, textStatus2, jqXHR2) {
+    $.get(residentsUrl1, residentsUrl2, residentsUrl3 function(data2, textStatus2, jqXHR2) {
       
       var residentNames = data2;
        $('#information-field3').text("Residents: " +  residentNames.name);
