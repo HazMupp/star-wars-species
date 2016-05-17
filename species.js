@@ -193,7 +193,7 @@ $('#tatooine-button').click(function() {
       
     });
     
-    for (int i = 2; i < responseBody.residents.length; i++) {
+    for (var i = 2; i < responseBody.residents.length; i++) {
       residentsUrl = responseBody.residents[i];
       $( '#information-field3' ).append(", " +  residentNames.name);
     }
