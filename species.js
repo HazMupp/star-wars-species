@@ -175,7 +175,7 @@ $('#tatooine-button').click(function() {
     var residentsUrl2 = responseBody.residents[1];
     var residentsUrl3 = responseBody.residents[2];
     
-    $.get(residentsUrl1, residentsUrl2, residentsUrl3 function(data2, textStatus2, jqXHR2) {
+    $.get(residentsUrl1, residentsUrl2, residentsUrl3, function(data2, textStatus2, jqXHR2) {
       
       var residentNames = data2;
        $('#information-field3').text("Residents: " +  residentNames.name);
