@@ -188,16 +188,6 @@ $('#tatooine-button').click(function() {
     });
     
      }
-  
-    /*
-    var residentsUrl = responseBody.residents[1];
-     $.get(residentsUrl, function(data2, textStatus2, jqXHR2) {
-      
-      var residentNames = data2;
-     $( '#information-field3' ).append(", " +  residentNames.name);
-      
-    });
-    */
    
 
     
@@ -205,3 +195,40 @@ $('#tatooine-button').click(function() {
   
 });
 
+
+$('#alderaan-button').click(function() {
+
+  var alderaanUrl = "http://swapi.co/api/planets/2/";
+  
+  $.get(alderaanUrl, function(data, textStatus, jqXHR){
+  
+        var responseBody = data;
+        $('#information-field').text("Name: " + responseBody.name + ". " + "Rotation period: " + responseBody.rotation_period +
+    ". " + "Orbital period: " + responseBody.orbital_period + ". " + "Diameter: " + responseBody.diameter + ".");
+    
+        $('#information-field2').text("Climate: " + responseBody.climate + ". " + "Gravity: " + responseBody.gravity + 
+    ". " + "Terrain: " + responseBody.terrain + ". " + "Surface water: " + responseBody.surface_water + ".");
+    
+    
+     $('#information-field3').text("Famous residents: ");
+    
+     for (var i = 0; i < responseBody.residents.length; i++) {
+    var residentsUrl = responseBody.residents[i];  // obeservera att denna variabel kommer byta
+                                                   // ...värde efter att den använts/ texten "appendats"
+                                                   // ... i "#information-field"
+    
+    
+    $.get(residentsUrl, function(data2, textStatus2, jqXHR2) {
+      
+      var residentNames = data2;
+       $('#information-field3').append(residentNames.name + ", ");
+      
+    });
+    
+     }
+   
+
+    
+  })
+  
+});
